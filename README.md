@@ -5,4 +5,4 @@
 pip install scrapy proxyscrape scrapy-rotating-proxies
 ```
 
-**Notes** Follow this [issue](https://github.com/JaredLGillespie/proxyscrape/issues/34) to fix proxyscrape.
+**Notes:** Follow this [issue](https://github.com/JaredLGillespie/proxyscrape/issues/34) to fix proxyscrape returning `none`.
