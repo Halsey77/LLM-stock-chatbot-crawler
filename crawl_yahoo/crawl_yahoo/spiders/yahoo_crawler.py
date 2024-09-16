@@ -1,6 +1,8 @@
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 
+def parse_time_element():
+    return None
 
 class CrawlingSpider(CrawlSpider):
     name = "my_crawler"
@@ -11,7 +13,7 @@ class CrawlingSpider(CrawlSpider):
 
     rules = (Rule(LinkExtractor(allow="news"), callback="parse_item"),)
 
-    body = [
+    temp_body = [
         "(Bloomberg) -- About two thirds of Australian baby boomers leaving the workforce don’t have enough pension savings to retire comfortably, according to research from the industry’s peak body.",
         "Most Read from Bloomberg",
         "Slightly more than 30% of Australians are able to afford a comfortable lifestyle in retirement, the Association of Superannuation Funds of Australia said. The median pension account balance for men aged 60-64 sat at A$205,385 ($137,690) as of June 2022 and A$153,685 for women the same age, a ways off the industry’s accepted comfortable retirement standard of A$690,000 for couples and A$595,000 for singles.",
@@ -29,7 +31,12 @@ class CrawlingSpider(CrawlSpider):
     ]
 
     def parse_item(self, response):
+        date, time = response.css("time::attr(datetime)").get().split("T")
+        time = time[:-1]
+        
         yield {
             "title": response.css("#caas-lead-header-undefined::text").get(),
             "content": response.css("div.caas-body p::text").getall(),
+            "date": date,
+            "time": time,
         }

@@ -13,6 +13,3 @@ class YahooFinanceSpider(scrapy.Spider):
         # Save the response body to a file
         with open('response_body.html', 'wb') as f:
             f.write(body)
-        
-        # Optionally, print or return the body
-        print(body)
