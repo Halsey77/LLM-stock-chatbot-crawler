@@ -6,3 +6,11 @@ pip install scrapy proxyscrape scrapy-rotating-proxies
 ```
 
 **Notes:** Follow this [issue](https://github.com/JaredLGillespie/proxyscrape/issues/34) to fix proxyscrape returning `none`.
+
+## How to run:
+"crawl_yahoo" is the main scrapy project with a yahoo spider `my_crawler`.
+```
+cd crawl_yahoo
+scrapy crawl my_crawler
+```
+**Notes:** Using free proxies provided by proxyscrape is not reliable. Thus, the results might be different. The proxies are written in `proxies.txt` file, each has "ip:port" format.
