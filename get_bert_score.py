@@ -7,8 +7,8 @@ def get_bert_score(hypotheses, references):
     
     return P, R, F1
 
-hyp = "I like apples"
-ref = "Donald trump is the worst president ever"
+hyp = "Hoàng sa và trường sa là của Việt Nam"
+ref = "Hoàng sa và trường sa là của Trung Quốc"
 
 p, r, f1 = get_bert_score([hyp], [ref])
 

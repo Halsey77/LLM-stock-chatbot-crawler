@@ -5,6 +5,11 @@
 pip install scrapy proxyscrape scrapy-rotating-proxies
 ```
 
+To use bertscore, install these libraries:
+```
+pip install bert-score sentencepiece
+```
+
 **Notes:** Follow this [issue](https://github.com/JaredLGillespie/proxyscrape/issues/34) to fix proxyscrape returning `none`.
 
 ## How to run:

@@ -59,6 +59,7 @@ DOWNLOADER_MIDDLEWARES = {
 }
 
 ROTATING_PROXY_LIST_PATH = "proxies.txt"
+ROTATING_PROXY_PAGE_RETRY_TIMES = 10
 # ROBOTSTXT_OBEY = False
 
 # Enable or disable extensions
