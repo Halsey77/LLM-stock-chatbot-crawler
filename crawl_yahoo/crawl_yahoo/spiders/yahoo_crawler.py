@@ -23,4 +23,5 @@ class CrawlingSpider(CrawlSpider):
             "content": response.css("div.caas-body p::text").getall(),
             "date": date,
             "time": time,
+            "link": response.url,
         }
