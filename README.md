@@ -19,4 +19,15 @@ python run_crawler.py
 ```
 The results are stored in an output json file named `output_{date}_{time}.json` inside `crawl_yahoo/outputs` folder. There is also a log file for scrapy in `crawl_yahoo/logs` folder.
 
+When scraping yahoo news, each sucessful scrape with return a json object:
+```
+{
+    "title": "The title of the news",
+    "content: "The content of the page",
+    "date": "Date of upload in UTC+0",
+    "time": "Time of upload in UTC+0",
+    "link": "Link to the page"
+}
+```
+
 **Notes:** Using free proxies provided by proxyscrape is not reliable. Thus, the results might be different. The proxies are written in `proxies.txt` file, each has "ip:port" format.
