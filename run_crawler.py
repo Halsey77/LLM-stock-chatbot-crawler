@@ -45,8 +45,8 @@ def main():
 
     # Step 3: Generate dynamic output file name using current date and time
     current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-    scrapy_output_file = f"output_{current_time}.json"
-    scrapy_log_file = f"scrapy_log_{current_time}.txt"
+    scrapy_output_file = f"outputs/output_{current_time}.json"
+    scrapy_log_file = f"logs/scrapy_log_{current_time}.txt"
 
     # Step 4: Run Scrapy command with dynamic output file name
     os.chdir(destination_folder)  # Change to the 'crawler' folder

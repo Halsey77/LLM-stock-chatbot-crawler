@@ -8,7 +8,7 @@ class CrawlingSpider(CrawlSpider):
     name = "my_crawler"
     allowed_domains = ["yahoo.com"]
     start_urls = ["https://finance.yahoo.com/news/"]
-    download_timeout = 360
+    download_timeout = 600
 
     # PROXY_SERVER = "116.197.132.59"
 
