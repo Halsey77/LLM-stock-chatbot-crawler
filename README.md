@@ -13,6 +13,8 @@ pip install bert-score sentencepiece
 **Notes:** Follow this [issue](https://github.com/JaredLGillespie/proxyscrape/issues/34) to fix proxyscrape returning `none`.
 
 ## How to run:
+
+### Running scraping process:
 "crawl_yahoo" is the main scrapy project with a yahoo spider `my_crawler`.
 ```
 python run_crawler.py
@@ -31,3 +33,6 @@ When scraping yahoo news, each sucessful scrape with return a json object:
 ```
 
 **Notes:** Using free proxies provided by proxyscrape is not reliable. Thus, the results might be different. The proxies are written in `proxies.txt` file, each has "ip:port" format.
+
+### Running Bertscore evaluation:
+See more in `get_bert_score.py` file.
