@@ -35,4 +35,4 @@ When scraping yahoo news, each sucessful scrape with return a json object:
 **Notes:** Using free proxies provided by proxyscrape is not reliable. Thus, the results might be different. The proxies are written in `proxies.txt` file, each has "ip:port" format.
 
 ### Running Bertscore evaluation:
-See more in `get_bert_score.py` file.
+See more in `get_bert_score.py` file for implementation and basic uses.
