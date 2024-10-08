@@ -19,6 +19,8 @@ python run_crawler.py
 ```
 The results are stored in an output json file named `output_{date}_{time}.json` inside `crawl_yahoo/outputs` folder. There is also a log file for scrapy in `crawl_yahoo/logs` folder.
 
+In current settings, this crawler will stop when more than **10 proxies** has been used but failed.
+
 When scraping yahoo news, each sucessful scrape with return a json object:
 ```
 {

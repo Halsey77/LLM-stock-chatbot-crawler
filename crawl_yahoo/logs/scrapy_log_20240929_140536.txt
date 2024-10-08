@@ -1,0 +1,189 @@
+2024-09-29 14:05:37 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: crawl_yahoo)
+2024-09-29 14:05:37 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.7.0, Python 3.10.14 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:44:50) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.1, Platform Windows-10-10.0.22631-SP0
+2024-09-29 14:05:37 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-09-29 14:05:37 [asyncio] DEBUG: Using selector: SelectSelector
+2024-09-29 14:05:37 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-09-29 14:05:37 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-09-29 14:05:37 [scrapy.extensions.telnet] INFO: Telnet Password: 866899f0a24118f6
+2024-09-29 14:05:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-09-29 14:05:37 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawl_yahoo',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs/scrapy_log_20240929_140536.txt',
+ 'NEWSPIDER_MODULE': 'crawl_yahoo.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['crawl_yahoo.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-09-29 14:05:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawl_yahoo.middlewares.CrawlYahooDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-09-29 14:05:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-09-29 14:05:37 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-09-29 14:05:37 [scrapy.core.engine] INFO: Spider opened
+2024-09-29 14:05:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:05:37 [my_crawler] INFO: Spider opened: my_crawler
+2024-09-29 14:05:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-09-29 14:05:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 100, reanimated: 0, mean backoff time: 0s)
+2024-09-29 14:05:41 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> (failed 1 times): Connection was refused by other side: 10061: No connection could be made because the target machine actively refused it..
+2024-09-29 14:05:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> (failed 2 times): Connection was refused by other side: 10061: No connection could be made because the target machine actively refused it..
+2024-09-29 14:06:07 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): Could not open CONNECT tunnel with proxy 223.135.156.183:8080 [{'status': 502, 'reason': b'ERROR'}]
+2024-09-29 14:06:07 [rotating_proxies.expire] DEBUG: Proxy <http://223.135.156.183:8080> is DEAD
+2024-09-29 14:06:07 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 1 times, max retries: 10)
+2024-09-29 14:06:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 1, unchecked: 99, reanimated: 0, mean backoff time: 8s)
+2024-09-29 14:06:17 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:06:28 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2024-09-29 14:06:28 [rotating_proxies.expire] DEBUG: Proxy <http://211.104.20.205:8080> is DEAD
+2024-09-29 14:06:28 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 2 times, max retries: 10)
+2024-09-29 14:06:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:06:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 1, unchecked: 98, reanimated: 1, mean backoff time: 49s)
+2024-09-29 14:06:49 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2024-09-29 14:06:49 [rotating_proxies.expire] DEBUG: Proxy <http://43.134.1.40:3128> is DEAD
+2024-09-29 14:06:49 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 3 times, max retries: 10)
+2024-09-29 14:06:51 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): Connection was refused by other side: 10061: No connection could be made because the target machine actively refused it..
+2024-09-29 14:06:51 [rotating_proxies.expire] DEBUG: Proxy <http://116.99.173.71:8118> is DEAD
+2024-09-29 14:06:51 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 4 times, max retries: 10)
+2024-09-29 14:06:54 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): Connection was refused by other side: 10061: No connection could be made because the target machine actively refused it..
+2024-09-29 14:06:54 [rotating_proxies.expire] DEBUG: Proxy <http://67.43.236.21:8307> is DEAD
+2024-09-29 14:06:54 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 5 times, max retries: 10)
+2024-09-29 14:06:58 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): Connection was refused by other side: 10061: No connection could be made because the target machine actively refused it..
+2024-09-29 14:06:58 [rotating_proxies.expire] DEBUG: Proxy <http://72.10.160.171:10095> is DEAD
+2024-09-29 14:06:58 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 6 times, max retries: 10)
+2024-09-29 14:07:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 5, unchecked: 94, reanimated: 1, mean backoff time: 123s)
+2024-09-29 14:07:17 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:07:19 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2024-09-29 14:07:19 [rotating_proxies.expire] DEBUG: Proxy <http://119.47.90.76:8080> is DEAD
+2024-09-29 14:07:19 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 7 times, max retries: 10)
+2024-09-29 14:07:21 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): Connection was refused by other side: 10061: No connection could be made because the target machine actively refused it..
+2024-09-29 14:07:21 [rotating_proxies.expire] DEBUG: Proxy <http://20.204.214.79:3129> is DEAD
+2024-09-29 14:07:21 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 8 times, max retries: 10)
+2024-09-29 14:07:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): Connection was refused by other side: 10061: No connection could be made because the target machine actively refused it..
+2024-09-29 14:07:25 [rotating_proxies.expire] DEBUG: Proxy <http://72.10.160.90:1365> is DEAD
+2024-09-29 14:07:25 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 9 times, max retries: 10)
+2024-09-29 14:07:28 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): Connection was refused by other side: 10061: No connection could be made because the target machine actively refused it..
+2024-09-29 14:07:28 [rotating_proxies.expire] DEBUG: Proxy <http://72.10.160.93:13931> is DEAD
+2024-09-29 14:07:28 [rotating_proxies.middlewares] DEBUG: Retrying <GET https://finance.yahoo.com/robots.txt> with another proxy (failed 10 times, max retries: 10)
+2024-09-29 14:07:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:07:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 8, unchecked: 90, reanimated: 2, mean backoff time: 140s)
+2024-09-29 14:07:52 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:08:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 7, unchecked: 90, reanimated: 3, mean backoff time: 156s)
+2024-09-29 14:08:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:08:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 7, unchecked: 90, reanimated: 3, mean backoff time: 156s)
+2024-09-29 14:08:42 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:09:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 6, unchecked: 90, reanimated: 4, mean backoff time: 164s)
+2024-09-29 14:09:07 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:09:32 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:09:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:09:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 4, unchecked: 90, reanimated: 6, mean backoff time: 176s)
+2024-09-29 14:09:42 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:09:57 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:10:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 2, unchecked: 90, reanimated: 8, mean backoff time: 190s)
+2024-09-29 14:10:27 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:10:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:10:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 1, unchecked: 90, reanimated: 9, mean backoff time: 200s)
+2024-09-29 14:10:52 [rotating_proxies.middlewares] DEBUG: 1 proxies moved from 'dead' to 'reanimated'
+2024-09-29 14:11:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:11:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:11:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:12:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:12:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:12:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:13:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:13:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:13:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:14:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:14:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:14:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:15:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:15:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:15:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:16:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:16:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-29 14:16:37 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:17:07 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 90, reanimated: 10, mean backoff time: 0s)
+2024-09-29 14:17:28 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 3 times): User timeout caused connection failure: Getting https://finance.yahoo.com/robots.txt took longer than 600 seconds..
+2024-09-29 14:17:28 [rotating_proxies.expire] DEBUG: Proxy <http://20.26.249.29:8080> is DEAD
+2024-09-29 14:17:28 [rotating_proxies.middlewares] DEBUG: Gave up retrying <GET https://finance.yahoo.com/robots.txt> (failed 11 times with different proxies)
+2024-09-29 14:17:28 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://finance.yahoo.com/robots.txt>: User timeout caused connection failure: Getting https://finance.yahoo.com/robots.txt took longer than 600 seconds..
+Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\envs\stock_chatbot\lib\site-packages\twisted\internet\defer.py", line 2010, in _inlineCallbacks
+    result = context.run(
+  File "C:\Users\Admin\anaconda3\envs\stock_chatbot\lib\site-packages\twisted\python\failure.py", line 549, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+  File "C:\Users\Admin\anaconda3\envs\stock_chatbot\lib\site-packages\scrapy\core\downloader\middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "C:\Users\Admin\anaconda3\envs\stock_chatbot\lib\site-packages\twisted\internet\defer.py", line 1074, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\Admin\anaconda3\envs\stock_chatbot\lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 397, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://finance.yahoo.com/robots.txt took longer than 600 seconds..
+2024-09-29 14:17:32 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "finance.yahoo.com"; Certificate does not contain any `subjectAltName`s.
+2024-09-29 14:17:33 [rotating_proxies.expire] DEBUG: Proxy <http://47.91.121.127:8081> is GOOD
+2024-09-29 14:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://finance.yahoo.com/news/> (referer: None)
+2024-09-29 14:17:34 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-09-29 14:17:34 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: outputs/output_20240929_140536.json
+2024-09-29 14:17:34 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'bans/error/scrapy.core.downloader.handlers.http11.TunnelError': 1,
+ 'bans/error/twisted.internet.error.ConnectionRefusedError': 6,
+ 'bans/error/twisted.internet.error.TCPTimedOutError': 3,
+ 'bans/error/twisted.internet.error.TimeoutError': 1,
+ 'downloader/exception_count': 13,
+ 'downloader/exception_type_count/scrapy.core.downloader.handlers.http11.TunnelError': 1,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 8,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 3,
+ 'downloader/exception_type_count/twisted.internet.error.TimeoutError': 1,
+ 'downloader/request_bytes': 3187,
+ 'downloader/request_count': 14,
+ 'downloader/request_method_count/GET': 14,
+ 'downloader/response_bytes': 210,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 716.351323,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 9, 29, 7, 17, 34, 53521, tzinfo=datetime.timezone.utc),
+ 'log_count/DEBUG': 39,
+ 'log_count/ERROR': 12,
+ 'log_count/INFO': 47,
+ 'log_count/WARNING': 1,
+ 'proxies/dead': 1,
+ 'proxies/good': 1,
+ 'proxies/mean_backoff': 164.93745552361807,
+ 'proxies/reanimated': 10,
+ 'proxies/unchecked': 89,
+ 'response_received_count': 1,
+ 'retry/count': 2,
+ 'retry/max_reached': 11,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 2,
+ "robotstxt/exception_count/<class 'twisted.internet.error.TimeoutError'>": 1,
+ 'robotstxt/request_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 9, 29, 7, 5, 37, 702198, tzinfo=datetime.timezone.utc)}
+2024-09-29 14:17:34 [scrapy.core.engine] INFO: Spider closed (finished)

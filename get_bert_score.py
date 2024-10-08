@@ -12,4 +12,6 @@ ref = "Hoàng sa và trường sa là của Trung Quốc"
 
 p, r, f1 = get_bert_score([hyp], [ref])
 
-print(f"Precision: {p}, Recall: {r}, F1: {f1}")
+print(f"Hypothesis: {hyp}")
+print(f"Reference: {ref}")
+print(f"Bert score: precision: {p}, recall: {r}, F1: {f1}")
