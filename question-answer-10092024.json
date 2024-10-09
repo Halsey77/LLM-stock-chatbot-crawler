@@ -1,0 +1,44 @@
+[
+  {
+    "link": "https://finance.yahoo.com/news/samsung-electronics-estimates-274-jump-235615435.html",
+    "date": "2024-10-07",
+    "context": "Samsung Electronics estimated on Tuesday a 274% jump in third-quarter operating profit but missed analyst estimates, as it struggled to capitalise on strong demand for chips used in artificial intelligence servers.",
+    "question": "What percentage increase in third-quarter operating profit did Samsung Electronics estimate?",
+    "answer": "274%"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/samsung-electronics-estimates-274-jump-235615435.html",
+    "date": "2024-10-07",
+    "context": "Samsung Electronics estimated on Tuesday a 274% jump in third-quarter operating profit but missed analyst estimates, as it struggled to capitalise on strong demand for chips used in artificial intelligence servers.",
+    "question": "Why did Samsung Electronics miss analyst estimates despite the 274% increase in operating profit?",
+    "answer": "It struggled to capitalise on strong demand for chips used in artificial intelligence servers."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/oil-prices-extend-gains-as-markets-wait-for-israels-retaliation-against-iran-154717391.html",
+    "date": "2024-10-07",
+    "context": "Oil extended its gains on Monday following its biggest weekly gain in more than a year in anticipation of an Israeli retaliation against Iran.",
+    "question": "Why did oil prices extend their gains on Monday?",
+    "answer": "Oil prices extended their gains due to anticipation of Israeli retaliation against Iran."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/oil-prices-extend-gains-as-markets-wait-for-israels-retaliation-against-iran-154717391.html",
+    "date": "2024-10-07",
+    "context": "Iran produces more than three million barrels of oil a day. Interrupting supply would send prices higher while cutting off shipments on the Straight of Hormuz would cause even more upward pressure.",
+    "question": "What could happen if Iran's oil supply is interrupted?",
+    "answer": "Interrupting supply would send oil prices higher and cutting off shipments on the Straight of Hormuz would cause more upward pressure."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/firing-cylinders-mrc-global-nyse-081847099.html",
+    "date": "2024-10-07",
+    "context": "MRC Global reported revenues of $832 million, down 4.5% year on year.",
+    "question": "What were MRC Global's reported revenues for Q2 2024?",
+    "answer": "$832 million."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/firing-cylinders-mrc-global-nyse-081847099.html",
+    "date": "2024-10-07",
+    "context": "MRC Global reported revenues of $832 million, down 4.5% year on year.",
+    "question": "By what percentage did MRC Global's revenues decline year on year?",
+    "answer": "4.5%."
+  }
+]
