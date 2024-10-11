@@ -40,5 +40,124 @@
     "context": "MRC Global reported revenues of $832 million, down 4.5% year on year.",
     "question": "By what percentage did MRC Global's revenues decline year on year?",
     "answer": "4.5%."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/q2-earnings-highlights-wayfair-nyse-081916819.html",
+    "date": "2024-10-07",
+    "context": "Wayfair reported revenues of $3.12 billion, down 1.7% year on year. This print fell short of analysts’ expectations by 2%.",
+    "question": "What was Wayfair's reported revenue for Q2 2024?",
+    "answer": "$3.12 billion"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/q2-earnings-highlights-wayfair-nyse-081916819.html",
+    "date": "2024-10-07",
+    "context": "Wayfair delivered the weakest performance against analyst estimates and slowest revenue growth of the whole group.",
+    "question": "Which online retailer delivered the weakest performance in Q2 2024 compared to analyst estimates?",
+    "answer": "Wayfair"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/q2-earnings-highlights-wayfair-nyse-081916819.html",
+    "date": "2024-10-07",
+    "context": "Wayfair reported 22 million active buyers, up 0.9% year on year.",
+    "question": "How many active buyers did Wayfair report in Q2 2024?",
+    "answer": "22 million"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/analyst-reboots-reddit-stock-price-000300546.html",
+    "date": "2024-10-08",
+    "context": "The social media company is teaming up with the U.S. Navy in a recruitment campaign targeting Gen Z.",
+    "question": "Which branch of the U.S. military is Reddit teaming up with in a recruitment campaign?",
+    "answer": "U.S. Navy"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/analyst-reboots-reddit-stock-price-000300546.html",
+    "date": "2024-10-08",
+    "context": "Reddit posted second-quarter results on Aug. 6, reporting a loss of 6 cents per share, compared with the expected loss of 32 cents.",
+    "question": "What was Reddit's reported loss per share in Q2 2024?",
+    "answer": "6 cents per share"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/analyst-reboots-reddit-stock-price-000300546.html",
+    "date": "2024-10-08",
+    "context": "JPMorgan raised the firm's price target on Reddit to $77 from $59 on Oct. 7 while keeping a neutral rating on the shares.",
+    "question": "What is JPMorgan's updated price target for Reddit as of October 7, 2024?",
+    "answer": "$77"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/lockheed-martin-remains-apos-prime-163912207.html",
+    "date": "2024-10-07",
+    "context": "Lockheed Martin remains a 'prime' defense stock amid escalating global tensions, according to RBC.",
+    "question": "Which defense company did RBC describe as a 'prime' stock amid escalating global tensions?",
+    "answer": "Lockheed Martin"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/lockheed-martin-remains-apos-prime-163912207.html",
+    "date": "2024-10-07",
+    "context": "Lockheed Martin is considered a 'prime' stock due to escalating global tensions.",
+    "question": "Why is Lockheed Martin considered a 'prime' stock according to RBC?",
+    "answer": "Due to escalating global tensions"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/lockheed-martin-remains-apos-prime-163912207.html",
+    "date": "2024-10-07",
+    "context": "RBC has reaffirmed Lockheed Martin as a 'prime' defense stock despite global tensions.",
+    "question": "Has RBC reaffirmed Lockheed Martin's status as a 'prime' defense stock?",
+    "answer": "Yes"
+  },
+  {
+    "link": "https://finance.yahoo.com/news/asian-traders-cautious-ahead-china-223430584.html",
+    "date": "2024-10-07",
+    "context": "Asian traders were cautious ahead of the reopening of Chinese markets after a week-long holiday.",
+    "question": "What were Asian traders cautious about on October 7, 2024?",
+    "answer": "The reopening of Chinese markets after a week-long holiday."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/asian-traders-cautious-ahead-china-223430584.html",
+    "date": "2024-10-07",
+    "context": "Brent crude jumped above $80 a barrel amid mounting tensions in the Middle East.",
+    "question": "Why did Brent crude rise above $80 a barrel on October 7, 2024?",
+    "answer": "Mounting tensions in the Middle East."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/asian-traders-cautious-ahead-china-223430584.html",
+    "date": "2024-10-07",
+    "context": "Alphabet Inc. sank 2.4% after a judge ruled it must lift restrictions that prevent developers from setting up rival marketplaces that compete with its Google Play Store.",
+    "question": "Why did Alphabet Inc.'s stock drop by 2.4% on October 7, 2024?",
+    "answer": "A judge ruled that Alphabet Inc. must lift restrictions preventing developers from setting up rival marketplaces to its Google Play Store."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/asian-traders-cautious-ahead-china-223430584.html",
+    "date": "2024-10-07",
+    "context": "Amazon.com Inc. must face an antitrust suit filed by the US Federal Trade Commission.",
+    "question": "What legal issue is Amazon.com Inc. facing in October 2024?",
+    "answer": "An antitrust suit filed by the US Federal Trade Commission."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/ares-said-agree-acquisition-gcp-021839259.html",
+    "date": "2024-10-08",
+    "context": "Ares Management Corp. has agreed to acquire GLP Capital Partners Ltd.’s operations outside of China.",
+    "question": "Which company did Ares Management Corp. agree to acquire in October 2024?",
+    "answer": "GLP Capital Partners Ltd.’s operations outside of China."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/ares-said-agree-acquisition-gcp-021839259.html",
+    "date": "2024-10-08",
+    "context": "The total value of the deal could climb to around $5 billion if certain targets are hit.",
+    "question": "What is the potential total value of Ares Management Corp.'s acquisition of GLP Capital Partners Ltd.'s operations outside of China?",
+    "answer": "$5 billion if certain targets are hit."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/middle-east-conflict-keeps-markets-004300395.html",
+    "date": "2024-10-08",
+    "context": "Brent crude futures surged above $80 a barrel due to heightened fears of a widespread conflict in the Middle East.",
+    "question": "What caused Brent crude futures to rise above $80 a barrel on October 8, 2024?",
+    "answer": "Heightened fears of a widespread conflict in the Middle East."
+  },
+  {
+    "link": "https://finance.yahoo.com/news/middle-east-conflict-keeps-markets-004300395.html",
+    "date": "2024-10-08",
+    "context": "Traders scaled back their expectations for Federal Reserve rate cuts after a robust U.S. labor market report.",
+    "question": "Why did traders scale back their expectations for Federal Reserve rate cuts in October 2024?",
+    "answer": "Due to a robust U.S. labor market report."
   }
 ]
